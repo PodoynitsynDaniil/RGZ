@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Даниил Подойницын. РГЗ по курсу "Интернет-программирование"</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body onload="loaded()">
+      <header>
+        <div class="info">Телефон: 14-16-39</div> 
+        <h1>Маркет. Планшеты</h1>
+      </header>
+
+      <nav class="main-menu"> 
+        <ul></ul>
+        <div class="searchbox"> 
+          <input type="search" placeholder="поиск по товарам" id="search"> 
+                <button onclick="search()">&#x1F50E;</button> 
+        </div> 
+      </nav>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Главная</a></li>
+            <li>Nokia T20 SS 4</li> 
+        </ul>
+
+        <main>
+            <div class="card">
+                <a>
+                    <div class="image"><img src="7.1.webp"></div>
+                </a>
+            </div>
+            <div class="card">
+              <a>
+                  <div class="image"><img src="7.2.webp"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a>
+                  <div class="image"><img src="7.3.webp"></div>
+              </a>
+            </div>
+          <table>
+            <tr><td>Описание:</td><td>Оптимален для выполнения офисных задач.</td></tr>
+            <tr><td>Количество ядер:</td><td>8</td></tr>
+            <tr><td>Диагональ:</td><td>10,4 дюйма</td></tr>
+            <tr><td>Цвет:</td><td>синий</td></tr>
+            <tr><td>Цена:</td><td>от 20 999 &#8381;</td></tr>
+          </table>
+        </main>
+
+        <footer> 
+          &copy; TabletMarket, 2021.  
+        </footer> 
+
+        <div class="overlay" onclick="hideModal()"></div>
+        <div class="modal">
+            <div class="message"></div>
+            <button onclick="hideModal()"></button>
+        </div>
+    </body>
+</html>

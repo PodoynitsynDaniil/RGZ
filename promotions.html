@@ -1,0 +1,77 @@
+<!doctype html> 
+<html lang="ru"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Даниил Подойницын. РГЗ по курсу "Интернет-программирование"</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body onload="loaded()"> 
+        <header> 
+            <div class="info">Телефон: 14-16-39</div> 
+            <h1>Маркет. Планшеты</h1> 
+        </header> 
+ 
+        <nav class="main-menu"> 
+            <ul></ul> 
+            <div class="searchbox"> 
+                <input type="search" placeholder="поиск по товарам" id="search"> 
+                <button onclick="search()">&#x1F50E;</button> 
+            </div> 
+        </nav>
+
+        <main>
+            <dl>
+                <dd>
+                В нашем магазине действуют следующие акции:<br>
+                1. Товар дня. В рамках акции каждый день с понедельника по четверг будет выделяться товар с суперпредложением.<br>
+                </dd>
+            <div class="card"> 
+                <a href="product1.html"> 
+                    <div class="image"><img src="ipad1.jpg"></div> 
+                    <div class="product-name">iPad mini</div> 
+                    <div class="price">Старая цена: 47 990 &#8381;</div>
+                    <div class="price">Цена по акции: 35 990 &#8381;</div>  
+                </a> 
+            </div>
+            </dl>
+            <dl>
+                <dd>
+                2. Скидка именинникам. В рамках акции на планшет "Samsung Galaxy Tab S6" предоставляется скидка 10% в день рождения, за 2 дня до и 5 дней после него.<br>
+                </dd>
+            <div class="card"> 
+                <a href="product8.html"> 
+                    <div class="image"><img src="8.1.webp"></div> 
+                    <div class="product-name">Samsung Galaxy Tab S6</div> 
+                    <div class="price">Старая цена: 32 999 &#8381;</div>
+                    <div class="price">Цена по акции: 30 000 &#8381;</div>  
+                </a> 
+            </div>
+            </dl>
+            <dl>
+                <dd>
+                3. Два по цене одного. При покупке iPad Air планшет Lenovo Tab P11 Plus в подарок.<br>
+                </dd>
+            <div class="card"> 
+                <a href="product17.html"> 
+                    <div class="image"><img src="17.1.webp"></div> 
+                    <div class="product-name">Lenovo Tab P11 Plus</div> 
+                    <div class="price">Старая цена: 23 999 &#8381;</div>
+                    <div class="price">Цена по акции: Бесплатно</div>  
+                </a> 
+            </div>
+            </dl>
+        </main>
+
+        <footer> 
+            &copy; TabletMarket, 2021.  
+        </footer>
+
+        <div class="overlay" onclick="hideModal()"></div>
+        <div class="modal">
+            <div class="message"></div>
+            <button onclick="hideModal()"></button>
+        </div>
+    </body> 
+</html>
